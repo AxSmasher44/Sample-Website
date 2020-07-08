@@ -1,0 +1,161 @@
+body{
+    width:100%;
+    padding: 0;
+    margin: 0;
+}
+#container{
+    padding: 0px;
+    margin: 0px;
+}
+
+#logo{
+    position: relative;
+    width: 45%;
+    padding: 10px 10px 10px;
+    }
+#top_nav li{
+    display: inline;
+    font-family: Lucida Console;
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+
+#top_nav{
+    position: absolute;
+    right: 25px;
+    padding: 10px;
+}
+
+#header{
+    background-image: linear-gradient(to bottom right, rgba(14, 204, 125, 1), rgba(14, 109, 204, 1));
+    position: relative;
+    padding-bottom: 0px;
+}
+
+#header em{
+    display:none;
+
+}
+
+a{
+    color: rgba(235, 247, 5, 1);
+}
+#header a:active{color:rgba(235, 247, 5, 1)}
+#header a:visited{color:rgba(235, 247, 5, 1)}
+#header a:hover{color:#fff}
+#header a:focus{color:rgba(235, 247, 5, 1)}
+#header a:link{color:rgba(235, 247, 5, 1)}
+
+#body{
+    position: relative;
+}
+
+#body section{
+    position: relative;
+}
+
+#bg_image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    z-index: -1;
+    display:block;
+}
+
+#anim_h{
+    position: absolute;
+    z-index: 1;
+    color: rgb(233, 235, 232);
+    font-family: 'Trajan Pro';
+    font-size: 62px;
+    animation: anima 1s ease-out;
+    text-align: center;
+    padding-top: 50px;
+    right: 25% 
+}
+
+@keyframes anima{
+    0%{
+        transform: translateY(500px);
+    }
+    100%{
+        
+    }
+}
+
+#body section{
+    margin:0px;
+    padding: 0px;
+}
+
+#bg2_image{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    z-index: 0;
+    font-size: 0px;
+}
+
+.para{
+    position: absolute;
+    z-index: 1;
+    text-align: justify;
+    top: 300px;
+    left: 50px;
+    right: 500px;
+    font-family: 'Arial';
+    font-size: 25px;
+    color: white;
+}
+
+#body section h2{
+    position: absolute;
+    z-index: 2;
+    text-align: justify;
+    top: 200px;
+    left: 50px;
+    right: 500px;
+    font-family: 'Arial';
+    font-size: 45px;
+    color: white;
+}
+
+#footer{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: darkslategray;
+    padding: 0px;
+    margin: 0px;
+    display:block;
+    text-align: center;
+    color: white;
+}
+
+
+
+@media only screen and (min-width: 768px){
+    #header em{
+        display: block;
+        position: relative;
+        padding: 10px 10px 0px 0px;
+        left: 10px;
+        bottom: 0px;
+        font-size: 30px;
+    }
+    #top_nav{
+        position: absolute;
+        top: 60px;
+        right: 70px;
+    }
+    #top_nav li{
+        font-size: 60px;
+        margin: 30px;
+    }
+}
